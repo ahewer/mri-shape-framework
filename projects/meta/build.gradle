@@ -18,8 +18,6 @@ subprojects { subproject ->
       dependsOn ":projects:tongue:$dataset.name-$it.speaker-$it.id:visualizeTongueProjection"
     }
 
-    dependsOn "createTongueModel"
-
     def outputPath =
       file("$rootProject.buildDir/$dataset.name/html")
 

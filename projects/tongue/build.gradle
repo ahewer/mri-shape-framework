@@ -96,6 +96,7 @@ subprojects { subproject ->
 
     // matchTongue depends on the landmarksTongue, and alignTongueTemplate task
     dependsOn "landmarksTongue"
+    dependsOn "segmentTongue"
 
     inputs.file pointCloud
     outputs.dir destDir
